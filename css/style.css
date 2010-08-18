@@ -1,0 +1,32 @@
+html{
+	overflow:				hidden;
+}
+
+body{
+	background:				#444;
+	color:					#FAFFA3;
+	font-family:			helvetica, arial;
+	margin:					0px;
+}
+
+#theCanvas{
+	background:				#222;
+}
+
+.controlPanelLeftOffset{
+	left:					10px;
+}
+
+ul.controlPanelLeftOffset li{
+	margin:					8px 0px 0px 0px;
+}
+
+.buttonList{
+	padding:				0px 0px 0px 0px;
+	position:				fixed;
+	top:					0px;
+}
+
+.buttonList li{
+	display:				inline;
+}

@@ -1,0 +1,51 @@
+html{
+	
+} 
+
+body{
+	
+}
+
+.profilerOutput{	
+	background:				#111;
+	color:					#ccc;
+	font-family:			arial;
+	font-size:				16px;
+	left:					30px;
+	list-style-type:		none;
+	max-height:				350px;
+	opacity:				0.8;
+	overflow:				auto;
+	padding:				8px;
+	position:				fixed;
+	top:					30px;
+	-moz-border-radius: 	8px; 
+	-webkit-border-radius: 	8px;
+}
+
+.profilerOutput:hover{
+	cursor:					move;
+}
+
+.profilerOutput li{
+	clear:					both;
+	margin:					3px 0px;	
+}
+
+.profilerOutput li.pause{
+	font-size:				1.2em;
+	font-weight:			bold;
+	float:					left;
+	margin:					3px 0px 9px 9px;
+}
+
+.profilerOutput li.pause:hover{
+	color:					#666;
+	cursor:					pointer;	
+}
+
+.profilerOutput .label{
+	font-weight:			bold;
+	margin:					0px 15px 0px 0px;
+}
+

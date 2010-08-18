@@ -1,0 +1,71 @@
+<!--
+
+JCK Template
+by Jeremy Kahn - jeremyckahn@gmail.com
+
+This is a handy starter template for the jQuery Canvas Kit. (http://jerbils.com/jck)
+It contains the barebones code needed to setup and use the JCK.  It calls out to the
+Google Code SVN to get the latest and greatest versions of all the requisite files,
+so copy from here and you're off and running.  Feel free, of course, to modify this
+file in any way that you need... or ignore it entirely.  It is meant as a learning aid.
+
+-->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+		<!-- Title -->
+		<title>JCK Template</title>
+
+		<!-- PLEASE MAKE SURE TO CHANGE THESE INCLUDES TO PULL FROM YOUR OWN MACHINE/HOST!!! -->
+		<link rel="stylesheet" type="text/css" href="http://jerbils.com/jck/css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="http://jerbils.com/jck/css/jckstyle.css" />
+
+		<!-- JavaScript includes -->
+
+		<script type="text/javascript" src="http://jquerycanvaskit.googlecode.com/svn/trunk/js/jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="http://jquerycanvaskit.googlecode.com/svn/trunk/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://jquerycanvaskit.googlecode.com/svn/trunk/js/jck.js"></script>
+
+		<!-- favicon -->
+		<link rel="SHORTCUT ICON" href=""/>
+
+		<!-- Meta tags -->
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+
+		<script type="text/javascript">
+
+		// Execute this code when the document loads
+		$(document).ready(function(){
+			$("canvas").each(function(){
+				// Initialize "this," which is a canvas as defined by the jQuery selector above
+				jck(this,{
+					framerate		: 20,
+					autoUpdate		: true,
+					autoClear		: true
+				});
+
+				this.runloop = function(){
+					// Put your run loop code in here
+				};
+			});
+		});
+
+		</script>
+
+    </head>
+
+    <body>
+
+		<canvas></canvas>
+
+    </body>
+
+</html>
